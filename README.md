@@ -7,3 +7,4 @@ A data analytics lecture using pyspark
    - homework: exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb
 
 2. Lesson 2: Data manypulation
+   - dataset for this lesson: https://www.kaggle.com/datasets/datasnaek/youtube-new?fbclid=IwAR1GafFaK6Pm1-voK-LRwJGG8Lgk1QWEd09UE661dVNZcAHqfnR_5-4ybN8#USvideos.csv
