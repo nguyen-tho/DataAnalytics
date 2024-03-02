@@ -1,4 +1,5 @@
-A data analytics lecture using pyspark
+A data analytics lecture using python and pyspark
+Coursebook: python-data-analysis-3rd-edition.pdf
 1. Lession 1: Install pyspark and setup spark environment on Anaconda
    References:
    
@@ -83,3 +84,23 @@ A data analytics lecture using pyspark
      #dataset for assignment question 1-6
      dataset_path = dataset\TweetHandle\ExtractedTweets.csv
      ```
+   regexp_extract method
+
+   Reference: https://docs.google.com/document/d/1gdoh50voz5iOsCS9Rd-JtNa9CCErQVkq/edit?fbclid=IwAR1Jl6usSspEyRfqmCzdYAsxdbulLv_9XzLfduVXYJCO8oU2OsrrPhdKn6k#heading=h.fvb53qjbsunw
+
+   Example
+   ```sh
+   from pyspark.sql.functions import regexp_extract, col
+
+   pattern = '(.)(@LatinoLeader)(.)'
+   df = data.withColumn('Latino_mentions', regexp_extract(col('Tweet'), pattern,2))
+   ```
+   regexp_replace method
+
+   Example
+   ```sh
+   from pyspark.sql.functions import regexp_replace
+   pattern = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'  # Regular expression pattern to match URLs
+   clean = data.withColumn('clean', regexp_replace(data.Tweet, pattern, '')).select('clean')
+   clean.show(truncate = False)
+   ```
