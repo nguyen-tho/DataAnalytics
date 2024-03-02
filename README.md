@@ -1,13 +1,20 @@
 A data analytics lecture using pyspark
 1. Lession 1: Install pyspark and setup spark environment on Anaconda
-2. Lession 2: Read, Write and validate data for csv file and json file
+   References:
+   
+   Pyspark on Anaconda: https://sparkbyexamples.com/pyspark/install-pyspark-in-anaconda-jupyter-notebook/?fbclid=IwAR3RNBGx4c6eKrxLTK9OP6PLX4TXflgIXbw9QYiYL8Icnrw6lb3Cc81dGNU
+
+   Spark installation on Windows: https://sparkbyexamples.com/spark/apache-spark-installation-on-windows/?fbclid=IwAR1k0Qu9ggAWIBkSRU9Q33pDCpp3nG8HQtoUPKnvK0NvilIj8ntP7IdKtvo
+   
+   
+3. Lession 2: Read, Write and validate data for csv file and json file
    
    - ex1.ipynb for csv data
    - ex2.ipynb for json data
    - dataset for homework: https://drive.google.com/file/d/1bw7pEgXSVLyMuaI_s3FPa5smNKHsu7-c/view?fbclid=IwAR1XUrTk0Oj0k26f2mS889ZkQEGx3FCI4i7rdO3zNVi5ZM-DpahqUCX8aN4
    - homework: exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb
 
-3. Lesson 3: Data manipulation
+4. Lesson 3: Data manipulation
    
    Learn about datatypes by pyspark
    ```sh
@@ -57,7 +64,7 @@ A data analytics lecture using pyspark
    - ex2-2.ipynb for Youtube trending dataset from above URL 
 
 
-4. Lesson 4: Data manipulation (cont)
+5. Lesson 4: Data manipulation (cont)
    
    Regular expression (regex)
 
