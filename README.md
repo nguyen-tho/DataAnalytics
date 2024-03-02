@@ -7,6 +7,36 @@ A data analytics lecture using pyspark
    - homework: exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb
 
 2. Lesson 2: Data manipulation
+   
+   Learn about data struct by pyspark
+   ```sh
+   #import modules
+   import pyspark.sql.types
+   #or
+   from pyspark.sql.types import *
+   #some classes are available for pyspark.sql.types module
+   #DataType
+   #NullType
+   #StringType
+   #BinaryType
+   #BooleanType
+   #DateType
+   #TimestampType
+   #DecimalType
+   #DoubleType
+   #FloatType
+   #ByteType
+   #IntegerType
+   #LongType
+   #ShortType
+   #ArrayType
+   #MapType
+   #StructField
+   #StructType
+   ```
    - dataset for this lesson: https://www.kaggle.com/datasets/datasnaek/youtube-new?fbclid=IwAR1GafFaK6Pm1-voK-LRwJGG8Lgk1QWEd09UE661dVNZcAHqfnR_5-4ybN8#USvideos.csv
    - ex2-1.ipynb for lession 1 revision
    - ex2-2.ipynb for Youtube trending dataset from above URL 
+
+
+4. Lesson 3: Data manipulation (cont)
