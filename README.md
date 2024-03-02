@@ -7,14 +7,14 @@ A data analytics lecture using pyspark
    Spark installation on Windows: https://sparkbyexamples.com/spark/apache-spark-installation-on-windows/?fbclid=IwAR1k0Qu9ggAWIBkSRU9Q33pDCpp3nG8HQtoUPKnvK0NvilIj8ntP7IdKtvo
    
    
-3. Lession 2: Read, Write and validate data for csv file and json file
+2. Lession 2: Read, Write and validate data for csv file and json file
    
    - ex1.ipynb for csv data
    - ex2.ipynb for json data
    - dataset for homework: https://drive.google.com/file/d/1bw7pEgXSVLyMuaI_s3FPa5smNKHsu7-c/view?fbclid=IwAR1XUrTk0Oj0k26f2mS889ZkQEGx3FCI4i7rdO3zNVi5ZM-DpahqUCX8aN4
    - homework: exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb
 
-4. Lesson 3: Data manipulation
+3. Lesson 3: Data manipulation
    
    Learn about datatypes by pyspark
    ```sh
@@ -64,7 +64,7 @@ A data analytics lecture using pyspark
    - ex2-2.ipynb for Youtube trending dataset from above URL 
 
 
-5. Lesson 4: Data manipulation (cont)
+4. Lesson 4: Data manipulation (cont)
    
    Regular expression (regex)
 
@@ -75,3 +75,11 @@ A data analytics lecture using pyspark
    # regex for a https URL:
    regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
    ```
+   Assignments files:
+   - Question 1-6(completed): Manipulating_Data_in_DataFrames_HW_Q1-6.ipynb
+   - Question 7-9(incomplete): Manipulating_Data_in_DataFrames_HW_Q7-9.ipynb
+   Dataset file for assignments
+     ```sh
+     #dataset for assignment question 1-6
+     dataset_path = dataset\TweetHandle\ExtractedTweets.csv
+     ```
