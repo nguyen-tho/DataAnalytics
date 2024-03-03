@@ -9,13 +9,31 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    
    
 2. Lession 2: Read, Write and validate data for csv file and json file
-   
+
+   Create spark session
+   ```sh
+   import findspark
+   findspark.init()
+   import pyspark
+   from pyspark.sql import SparkSession
+
+   spark = SparkSession.builder.appName('csvReader').getOrCreate()
+   ```
+   Read data
+   ```sh
+   path = 'dataset' #dataset path based on your definition
+   # read csv file
+   students = spark.read.csv(path+'students.csv', inferSchema = True, header = True)
+   # inferSchema and header parameter to define first line of csv file is header and schema of dataframe
+   # read json file
+   people = spark.read.json(path+'people.json')
+   ```
    - ex1.ipynb for csv data
    - ex2.ipynb for json data
    - dataset for homework: https://drive.google.com/file/d/1bw7pEgXSVLyMuaI_s3FPa5smNKHsu7-c/view?fbclid=IwAR1XUrTk0Oj0k26f2mS889ZkQEGx3FCI4i7rdO3zNVi5ZM-DpahqUCX8aN4
-   - homework: exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb
+   - homework (completed): exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb 
 
-3. Lesson 3: Data manipulation
+4. Lesson 3: Data manipulation
    
    Learn about datatypes by pyspark
    ```sh
@@ -65,7 +83,7 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    - ex2-2.ipynb for Youtube trending dataset from above URL 
 
 
-4. Lesson 4: Data manipulation (cont)
+5. Lesson 4: Data manipulation (cont)
    
    Regular expression (regex)
 
@@ -78,7 +96,7 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    ```
    Assignments files:
    - Question 1-6(completed): Manipulating_Data_in_DataFrames_HW_Q1-6.ipynb
-   - Question 7-9(incomplete): Manipulating_Data_in_DataFrames_HW_Q7-9.ipynb
+   - Question 7-9(completed): Manipulating_Data_in_DataFrames_HW_Q7-9.ipynb
    Dataset file for assignments
      ```sh
      #dataset for assignment question 1-6
