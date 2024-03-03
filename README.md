@@ -28,12 +28,21 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    # read json file
    people = spark.read.json(path+'people.json')
    ```
+   Define data structure
+   ```sh
+   from pyspark.sql.types import StructField, StringType, DateType, StructType
+   list_schema =[StructField("name", StringType(), True),
+              StructField("timestamp", DateType(), True)]
+   # read json data file again to read defined structure
+   data_struct = StructType(fields=list_schema)
+   people = spark.read.json(path+'people.json', schema=data_struct)
+   ```
    - ex1.ipynb for csv data
    - ex2.ipynb for json data
    - dataset for homework: https://drive.google.com/file/d/1bw7pEgXSVLyMuaI_s3FPa5smNKHsu7-c/view?fbclid=IwAR1XUrTk0Oj0k26f2mS889ZkQEGx3FCI4i7rdO3zNVi5ZM-DpahqUCX8aN4
    - homework (completed): exercises 1, 2, 3, 4, 5, 10 at Read_Write_and_Validate_HW.ipynb 
 
-4. Lesson 3: Data manipulation
+3. Lesson 3: Data manipulation
    
    Learn about datatypes by pyspark
    ```sh
@@ -83,7 +92,7 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    - ex2-2.ipynb for Youtube trending dataset from above URL 
 
 
-5. Lesson 4: Data manipulation (cont)
+4. Lesson 4: Data manipulation (cont)
    
    Regular expression (regex)
 
