@@ -134,5 +134,5 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    5. Lesson 5: Search and filter dataframe
       Dataset path for this lession
       ```sh
-      
+      path = 'dataset/fifa19.csv'
       ```
