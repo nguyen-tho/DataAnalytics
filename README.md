@@ -131,8 +131,9 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    clean = data.withColumn('clean', regexp_replace(data.Tweet, pattern, '')).select('clean')
    clean.show(truncate = False)
    ```
-   5. Lesson 5: Search and filter dataframe
-      Dataset path for this lession
-      ```sh
-      path = 'dataset/fifa19.csv'
-      ```
+5. Lesson 5: Search and filter dataframe
+   
+   Dataset path for this lession
+   ```sh
+   path = 'dataset/fifa19.csv'
+   ```
