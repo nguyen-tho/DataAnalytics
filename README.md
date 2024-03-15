@@ -177,3 +177,17 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    Homework (completed): Search and Filter DataFrames in PySpark-HW.ipynb file
 6. Lesson 6: Aggregation dataframe
    
+   Dataset for this lession
+   ```sh
+   dataset_path = 'dataset/nyc_air_bnb.csv'
+   ```
+   Assignment: Aggregating_DataFrames_in_PySpark_HW.ipynb file
+
+   agg method
+   ```sh
+   grouped_df = airbnb.groupBy("host_id")
+
+   # Calculate the total number of reviews for each host using 'count'
+   total_reviews_per_host = grouped_df.agg(count("number_of_reviews").alias("total_reviews"))
+
+   ```
