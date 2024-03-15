@@ -137,4 +137,4 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    ```sh
    path = 'dataset/fifa19.csv'
    ```
-   Homework: Search and Filter DataFrames in PySpark-HW.ipynb file
+   Homework (completed): Search and Filter DataFrames in PySpark-HW.ipynb file
