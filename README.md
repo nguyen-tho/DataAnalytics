@@ -175,4 +175,5 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    filtered_df = fifa_df.filter(F.col("Name").isin(["L. Messi", "Cristiano Ronaldo"]))
    ```
    Homework (completed): Search and Filter DataFrames in PySpark-HW.ipynb file
-6. Lesson 6: 
+6. Lesson 6: Aggregation dataframe
+   
