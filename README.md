@@ -137,5 +137,42 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    ```sh
    path = 'dataset/fifa19.csv'
    ```
+   Groupby method:
+   ```sh
+   #groupBy command need to use together with a statistic  function.
+   #Here, I will show you how to calculate the mean and standard deviation of each group using 'groupBy' and 'apply'.
+   #Here, we will use the groupBy
+
+   group_df = df.groupBy("Nationality").count()
+   group_df.show()
+   ```
+   Orderby method
+   ```sh
+   from pyspark.sql.functions import desc, asc
+   df.orderBy(desc("Age")).show()
+   print('##################################################################################################################################')
+   df.orderBy(asc("Age")).show()
+   ```
+   Select with where clause method
+   ```sh
+   #select data by condition using where  clause
+   fifa_df.select("Name", "Club").where(fifa_df.Club.like("%Barcelona%")).show(truncate=False)
+   ```
+   substr method
+   ```sh
+   photo_ext = fifa_df.select("Photo", fifa_df.Photo.substr(-3,3).alias("File_extension"))
+   photo_ext.show()
+   ```
+   isin, startswith, endswith methods
+   ```sh
+   #df1 = fifa_df.Club.isin("Barcelona", "Juventus")
+   df1 = fifa_df.select("Name", "Club").where(fifa_df.Club.isin(["Barcelona", "Juventus"]))
+   #df2 = fifa_df.Name.startswith("B").where(fifa_df.Name.endswith("a"))
+   df2 = fifa_df.select("Name").where(fifa_df.Name.startswith("B")).where(fifa_df.Name.endswith("a"))
+   ```
+   filter method
+   ```sh
+   filtered_df = fifa_df.filter(F.col("Name").isin(["L. Messi", "Cristiano Ronaldo"]))
+   ```
    Homework (completed): Search and Filter DataFrames in PySpark-HW.ipynb file
 6. Lesson 6: 
