@@ -1,18 +1,30 @@
 import findspark
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import to_date
+from pyspark.sql.functions import to_date, asc, desc
 
-def create_spark_session(appName):
+def create_spark_session(appName, config =None):
     """Create a Spark session named as appName and return the session object"""
+    """_summary_
+        appName(str) : The name of spark application.
+        config(any) : config mode
+    Returns:
+        spark_session: a spark session will be create or get (if exist)
+    """
     # Initialize FindSpark to get hold of Spark Session
     findspark.init()
-    
+    if config  is None:
     # Create a Spark session, set app name and mode (in this case it's 'local')
-    spark = SparkSession\
-        .builder\
-        .appName(appName)\
-        .getOrCreate()
-        
+        spark = SparkSession\
+            .builder\
+            .appName(appName)\
+            .getOrCreate()
+    else:
+        spark = SparkSession\
+            .builder\
+            .appName(appName)\
+            .config(**config)\
+            .getOrCreate()    
+    print("Running spark version: ", spark.version )   
     return spark
 
 def read_data(spark_session, file_path, mode):
@@ -137,4 +149,15 @@ def change_data_type(df, col, new_type, date_format = None):
 #def drop_columns(df, columns):
 #    return df.drop(*columns)
 
+def group_by(df, cols):
+    grouped_df =  df.groupBy(cols)
+    return grouped_df # grouped_df will need a statatiic  method like agg() or sum() to be useful
 
+def order_by(df, col, order):
+    if  order.lower() == 'asc':
+        return df.orderBy(asc(col))
+    elif order.lower()== 'desc':
+        return df.orderBy(desc(col))
+    else:
+        raise ValueError("Order parameter should be either asc or desc")
+    
