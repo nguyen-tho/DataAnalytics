@@ -198,7 +198,30 @@ Coursebook: python-data-analysis-3rd-edition.pdf
     pivot function
 
    Reference: https://docs.google.com/document/d/1F3ZnN2jInhvVqOu-EiWrHOKm3f3vDaXC/edit?fbclid=IwAR2a03HQWzYVF_fsnBuZLD7-wvpEZ_G3S6Os51wyLvPK2SLL8aujkfYVz9Y#heading=h.fvb53qjbsunw
-7. Lesson 7: Joining and Appending dataframe
+   pivot example:
+   ```sh
+   from pyspark.sql.functions import col, avg, round
+
+   # Filter for private and shared room types (replace with actual names if different)
+   filtered_df = airbnb.filter(col("room_type").isin(["Private room", "Shared room"]))
+
+   # Filter for Manhattan and Brooklyn only (replace with actual names if different)
+   filtered_df = filtered_df.filter(
+    col("neighbourhood_group").isin(["Manhattan", "Brooklyn"])
+   )
+
+   # List the room types you want to include (avoid duplicates)
+   room_types_list = ["Private room", "Shared room"]
+
+   # Use pivot to create a two-by-two table
+   avg_price_per_listing = filtered_df.groupBy("neighbourhood_group") \
+    .pivot("room_type", room_types_list) \
+    .agg(round(avg("price"), 2).alias("avg_price"))
+
+   # Display the results
+   avg_price_per_listing.show()
+   ```
+8. Lesson 7: Joining and Appending dataframe
 
    SQL Join
    
