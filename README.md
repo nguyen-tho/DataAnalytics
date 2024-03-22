@@ -198,6 +198,7 @@ Coursebook: python-data-analysis-3rd-edition.pdf
     pivot function
 
    Reference: https://docs.google.com/document/d/1F3ZnN2jInhvVqOu-EiWrHOKm3f3vDaXC/edit?fbclid=IwAR2a03HQWzYVF_fsnBuZLD7-wvpEZ_G3S6Os51wyLvPK2SLL8aujkfYVz9Y#heading=h.fvb53qjbsunw
+   
    pivot example:
    ```sh
    from pyspark.sql.functions import col, avg, round
