@@ -191,3 +191,8 @@ Coursebook: python-data-analysis-3rd-edition.pdf
    total_reviews_per_host = grouped_df.agg(count("number_of_reviews").alias("total_reviews"))
 
    ```
+
+   Differences between agg and summary method
+   - agg to make statistics functions on a column
+   - summary to make statistics functions on whole dataframe
+   - Reference: https://docs.google.com/document/d/1Yc8x1z35s85CVD9MD7Dzq1g3H5DhkXtX/edit?fbclid=IwAR0uhm3RTzgNFhyKLdjZYQP6f5H2ACVPIa8DnrtrqFBnl7vnQjR40CHQT88#heading=h.fvb53qjbsunw
