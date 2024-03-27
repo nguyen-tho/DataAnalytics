@@ -239,3 +239,4 @@ Dataset to do experiments: choose any dataset if you want
    SQL Join
    
    Reference: https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+   dataset for this lesson: 
