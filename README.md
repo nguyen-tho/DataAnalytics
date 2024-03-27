@@ -239,4 +239,9 @@ Dataset to do experiments: choose any dataset if you want
    SQL Join
    
    Reference: https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
-   dataset for this lesson: 
+   
+   dataset for this lesson:
+   ```sh
+   dataset_path = '/dataset/uw-madison-courses/'
+   ```
+   Assignment for the lesson: Joining and Appending dataframe.ipynb
