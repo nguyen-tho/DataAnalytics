@@ -1,5 +1,10 @@
 A data analytics lecture using python and pyspark
 Coursebook: python-data-analysis-3rd-edition.pdf
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Mid-term assignment: Data visualization
+Reference: chapter 5 of the coursebook
+Dataset to do experiments: choose any dataset if you want
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Lession 1: Install pyspark and setup spark environment on Anaconda
    References:
    
