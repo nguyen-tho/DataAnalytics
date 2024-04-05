@@ -234,7 +234,7 @@ Dataset to do experiments: choose any dataset if you want
    # Display the results
    avg_price_per_listing.show()
    ```
-8. Lesson 7: Joining and Appending dataframe
+7. Lesson 7: Joining and Appending dataframe
 
    SQL Join
    
@@ -245,3 +245,5 @@ Dataset to do experiments: choose any dataset if you want
    dataset_path = '/dataset/uw-madison-courses/'
    ```
    Assignment for the lesson: Joining and Appending dataframe.ipynb
+8. Lesson 8: Joining and Appending dataframe (cont)
+9. Lesson 9: Handling missing data
