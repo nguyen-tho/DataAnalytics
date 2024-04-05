@@ -247,3 +247,7 @@ Dataset to do experiments: choose any dataset if you want
    Assignment for the lesson: Joining and Appending dataframe.ipynb
 8. Lesson 8: Joining and Appending dataframe (cont)
 9. Lesson 9: Handling missing data
+    - Dataset for sample code: https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants
+    - Sample code file: Handling_Missing_Data_in_Pyspark.ipynb
+    - Assignment file: Handling_Missing_Data_in_Pyspark_HW.ipynb
+    - Assignment dataset: https://www.kaggle.com/datasets/meinertsen/new-york-city-taxi-trip-hourly-weather-data
