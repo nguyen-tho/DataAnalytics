@@ -10,6 +10,12 @@ Reference: chapter 5 of the coursebook
 Dataset to do experiments: choose any dataset if you want
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Final assignment: Data Analytics
+
+Requirements: https://sites.google.com/view/dangnt-courses/%C4%91%E1%BA%A1i-h%E1%BB%8Dc/sgu/ph%C3%A2n-t%C3%ADch-d%E1%BB%AF-li%E1%BB%87u/da-2023-2024-hk2?fbclid=IwZXh0bgNhZW0CMTAAAR2utsKCdw2F-ZGe5Paw5jURN9Bn-SEnSJK16Q9OiteZi3lbW2OtXyYhvgc_aem_AZOaLH8fW-N9WfIa0Mc9nqJsEjBQ1jFVdSmP8TS_HeSiMiAsfIC9vk6-_LX_FBItQMnb9bv74pAd1eZU2LXMC8ta
+
+Deadline 12/5/2024
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Content of the course:
 
 1. Lession 1: Install pyspark and setup spark environment on Anaconda
