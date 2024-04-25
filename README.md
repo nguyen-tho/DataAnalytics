@@ -234,7 +234,10 @@ Dataset to do experiments: choose any dataset if you want
    # Display the results
    avg_price_per_listing.show()
    ```
-7. Lesson 7: Joining and Appending dataframe
+   Pivot table exercise with Excel: https://docs.google.com/document/d/1ba0nUB39PFDT98mcFNbcUwQcP9QEioGHt2eT41ZT020/edit?fbclid=IwZXh0bgNhZW0CMTAAAR3falVwqutUmP9BI3THRc26uSi_gHbXvB8WZ09_AeSkyRBMtmDuv8m8yEc_aem_AZPPutD_di3mu-QesDCKG1H4u0Q7yhx7LNf0PA_jp5m6sWhDGE9tVx9e-fKj4Vo5HzoOZ0fqYBbgZOX8YHFRJGqQ#heading=h.dklr7czbvy76
+   
+   
+8. Lesson 7: Joining and Appending dataframe
 
    SQL Join
    
@@ -245,8 +248,8 @@ Dataset to do experiments: choose any dataset if you want
    dataset_path = '/dataset/uw-madison-courses/'
    ```
    Assignment for the lesson: Joining and Appending dataframe.ipynb
-8. Lesson 8: Joining and Appending dataframe (cont)
-9. Lesson 9: Handling missing data
+9. Lesson 8: Joining and Appending dataframe (cont)
+10. Lesson 9: Handling missing data
     - Dataset for sample code: https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants
     - Sample code file: Handling_Missing_Data_in_Pyspark.ipynb
     - Assignment file: Handling_Missing_Data_in_Pyspark_HW.ipynb
