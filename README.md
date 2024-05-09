@@ -263,3 +263,13 @@ Deadline 12/5/2024
 10. Lession 10: Statistic with excel:
     
     coursebook: https://drive.google.com/file/d/1Xh_j_l350RghLNXyRAaBfRP9J8ViQuKD/view?fbclid=IwZXh0bgNhZW0CMTEAAR3an0jxeAX0Tjf8oI43NuyMrVSzii0TTHRJxkX64vSTdchx4W4YV7kkZng_aem_AR1ZNkaMbYUHfz5fffr2RJlfH5lQ_lvZah_2kg-QALq4REoZh1PZdkBnB0-4xCmsdJZMtPeyXKvOC3rPOUtB2v-C
+11. Lession 11: Stqatistic with excel (cont)
+    ```sh
+    # exercises file at statistic-with-excel folder
+    #lesson content:
+    # mean
+    # median
+    # variance (population variance and sample variance)
+    # standard devariance
+    ```
+    
