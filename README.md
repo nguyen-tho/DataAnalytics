@@ -271,8 +271,10 @@ Deadline 12/5/2024
     # median is the center position of a sorted list of values
     # mode is the highest frequency value in a list
     # variance (population variance and sample variance)
-    # population variance
-    # sample value
+    # population variance: σ² = Σ(xᵢ - μ)² / N
+    # sample variance: s² = Σ(xᵢ - x̄)² / (n - 1)
     # standard devariance
+    # population standard devariance: σ = sqrt(Σ(xᵢ - μ)² / N)
+    # sample standard devariance: s = sqrt(Σ(xᵢ - x̄)² / (n - 1))
     ```
     
