@@ -241,9 +241,11 @@ Deadline 12/5/2024
    avg_price_per_listing.show()
    ```
    Pivot table exercise with Excel: https://docs.google.com/document/d/1ba0nUB39PFDT98mcFNbcUwQcP9QEioGHt2eT41ZT020/edit?fbclid=IwZXh0bgNhZW0CMTAAAR3falVwqutUmP9BI3THRc26uSi_gHbXvB8WZ09_AeSkyRBMtmDuv8m8yEc_aem_AZPPutD_di3mu-QesDCKG1H4u0Q7yhx7LNf0PA_jp5m6sWhDGE9tVx9e-fKj4Vo5HzoOZ0fqYBbgZOX8YHFRJGqQ#heading=h.dklr7czbvy76
+
+   Pivot table exercises: folder pivot_ex/dataset (all excel files (.xlsx)
    
    
-7. Lesson 7: Joining and Appending dataframe
+8. Lesson 7: Joining and Appending dataframe
 
    SQL Join
    
@@ -254,13 +256,13 @@ Deadline 12/5/2024
    dataset_path = '/dataset/uw-madison-courses/'
    ```
    Assignment for the lesson: Joining and Appending dataframe.ipynb
-8. Lesson 8: Joining and Appending dataframe (cont)
-9. Lesson 9: Handling missing data
+9. Lesson 8: Joining and Appending dataframe (cont)
+10. Lesson 9: Handling missing data
     - Dataset for sample code: https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants
     - Sample code file: Handling_Missing_Data_in_Pyspark.ipynb
     - Assignment file: Handling_Missing_Data_in_Pyspark_HW.ipynb
     - Assignment dataset: https://www.kaggle.com/datasets/meinertsen/new-york-city-taxi-trip-hourly-weather-data
-10. Lession 10: Statistic with excel:
+11. Lession 10: Statistic with excel:
     
     coursebook: https://drive.google.com/file/d/1Xh_j_l350RghLNXyRAaBfRP9J8ViQuKD/view?fbclid=IwZXh0bgNhZW0CMTEAAR3an0jxeAX0Tjf8oI43NuyMrVSzii0TTHRJxkX64vSTdchx4W4YV7kkZng_aem_AR1ZNkaMbYUHfz5fffr2RJlfH5lQ_lvZah_2kg-QALq4REoZh1PZdkBnB0-4xCmsdJZMtPeyXKvOC3rPOUtB2v-C
     Exercise: Draw bar plot, pie plot and pareto plot
