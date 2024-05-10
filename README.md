@@ -267,9 +267,12 @@ Deadline 12/5/2024
     ```sh
     # exercises file at statistic-with-excel folder
     #lesson content:
-    # mean
-    # median
+    # mean = sum of element 's values / the number of element
+    # median is the center position of a sorted list of values
+    # mode is the highest frequency value in a list
     # variance (population variance and sample variance)
+    # population variance
+    # sample value
     # standard devariance
     ```
     
